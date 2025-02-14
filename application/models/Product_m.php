@@ -12,4 +12,14 @@ class Product_m extends CI_Model
     {
         return $this->db->get('product')->result();
     }
+
+    function delete($id)
+    {
+        $this->db->where('id', $id)->delete('product');
+    }
+
+    function update($id, $data)
+    {
+        $this->db->where('id', $id)->update('product', $data);
+    }
 }
