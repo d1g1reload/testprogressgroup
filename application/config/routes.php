@@ -52,5 +52,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $route['default_controller'] = 'main';
 $route['add'] = 'Main/add';
 $route['save'] = 'Main/save';
+$route['delete'] = 'Main/delete';
+$route['update'] = 'Main/update';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
